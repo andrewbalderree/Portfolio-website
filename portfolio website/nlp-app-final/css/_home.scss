@@ -1,0 +1,104 @@
+@import "./mixins";
+@import "./variables";
+
+.home-container {
+    @include flex(space-between, column);
+    width: 100%;
+    height: 100%;
+    background-color: $background-color;
+    
+    
+/* status box display : hidden
+    *********************************************************************************** */
+    
+
+    /* title display ********************************************************************************************************************************* */
+
+    .home-title {
+        @include flex(center, column);
+        height: 45vh;
+        padding-top: 50px;
+        h1 {
+            font-size: 12vw;
+            font-weight: 1000;
+            text-align: center;
+        }
+        p {
+            font-size: 3vw;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        button {
+            height: 40px;
+        }
+    }
+
+    @media only screen and (min-width: 800px) {
+        .home-title {
+            padding-top: 50px;
+            h1{
+                font-size: 14vh;
+            }
+            p{
+                font-size: 3.5vh;
+            }
+        }
+    }
+
+
+
+/* apps display *********************************************************************************************************************** */
+    .home-apps-display{
+        display: grid;
+        grid-template-columns: 40% 40%;
+        grid-template-rows: 40% 40%;
+        align-items: center;
+        justify-items: stretch;
+        justify-content: center;
+        grid-gap: 4vh 5vw;
+        height: 55vh;
+        width: 100vw;
+        
+
+        .app-card {
+            @include flex(space-around, column);
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            background-color: $primary-color;
+            i {
+                font-size: 7vh;
+                color: $primary-dark;
+            }
+        }
+    }
+
+    @media only screen and (min-width: 900px) {
+        .home-apps-display{
+            padding: 40px;
+            display: grid;
+            grid-template-columns: 20% 20% 20% 20%;
+            grid-template-rows: 100%;
+            align-items: center;
+            justify-items: stretch;
+            justify-content: center;
+            grid-gap: 4vh 5vw;
+            height: 55vh;
+            width: 100vw;
+            
+    
+            .app-card {
+                @include flex(space-around, column);
+                width: 100%;
+                height: 60%;
+                background-color: $primary-color;
+                i {
+                    font-size: 7vh;
+                    color: $primary-dark;
+                }
+            }
+        }
+    }
+
+
+}

@@ -1,0 +1,67 @@
+@import "./variables";
+@import "./mixins";
+@import "./container";
+@import "./home";
+@import "./discovery";
+@import "./session-display";
+@import "./anchor-page";
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: $primary-text;
+}
+
+button{
+    width: 90%;
+    padding: 5px 10px;
+    font-size: $font-size-md;
+    border: none;
+    border-radius: 15px;
+    background-color: $button-dark;
+    color: $text-color;
+}
+
+.next-step {
+    width: 45%;
+}
+
+.last-step {
+    position: absolute;
+    right: 4vh;
+    top: 4vh;
+    width: 5vh;
+    height: 5vh;
+    color: $primary-dark;
+    background-color: $primary-color;
+    padding: 0;
+}
+
+
+
+
+
+body {
+    @include flex(center, column);
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+
+
+.hidden {
+    visibility: hidden;
+    position: absolute;
+}

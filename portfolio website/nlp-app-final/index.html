@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+
+    <!-- fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <title>Portfolio: Andrew Balderree</title>
+
+    <title>Document</title>
+</head>
+<body>
+    <div id="container" class="app-container">
+
+        <div class="anchor-display-page" id="anchor-display-page">
+            <div  class="anchor-display-emotion"  id="anchor-display-emotion"></div>
+            <div class="anchor-display-icon" id="anchor-display-icon"></div>
+            <div class="anchor-display-triggers" id="anchor-display-triggers">
+                <p id="anchor-display-trigger-0"></p>
+                <p id="anchor-display-trigger-1"></p>
+                <p id="anchor-display-trigger-2"></p>
+            </div>
+        </div>
+
+        <div class="pos-anchor-display-page" id="pos-anchor-display-page">
+            <div  class="pos-anchor-display-emotion"  id="pos-anchor-display-emotion"></div>
+            <div class="pos-anchor-display-icon" id="pos-anchor-display-icon"></div>
+            <div class="pos-anchor-display-triggers" id="pos-anchor-display-triggers">
+                <p id="pos-anchor-display-trigger-0"></p>
+                <p id="pos-anchor-display-trigger-1"></p>
+                <p id="pos-anchor-display-trigger-2"></p>
+            </div>
+        </div>
+
+
+        <button class="sessions-button " id="sessions-button"><i class="fas fa-bars"></i></button>
+
+        <div class="session-display-container hidden" id="session-display-container">
+            <i class="fas fa-home session-display-home-button" id="session-display-home-button"></i>
+            <div class="status-box">
+                <div class="emotions-status-box">
+
+                    <div class="emotion-status">
+                        <div class="emotion-icon-display" id="neg-emotion-icon-display">
+                        </div>
+                        <div class="emotion-title-box">
+                            <div class="emotion-display-title">
+                                <h1>Negative Emotion</h1>
+                            </div>
+                            <div></div>
+                            <p id="neg-emotion-description"></p>
+                        </div>
+                        <div class="emotion-triggers-box">
+                            <div class="emotion-display-title">
+                                <h1>Triggers</h1>
+                                
+                            </div>
+                            <div id="neg-emotion-triggers-description">
+                                <p id=neg-trigger-0></p>
+                                <p id=neg-trigger-1></p>
+                                <p id=neg-trigger-2></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="emotion-status">
+                        <div class="emotion-icon-display" id="pos-emotion-icon-display"></div>
+                        <div class="emotion-title-box">
+                            <div class="emotion-display-title">
+                                <h1>Positive Emotion</h1>
+                            </div>
+                            <p id="pos-emotion-description"></p>
+                        </div>
+                        <div class="emotion-triggers-box">
+                            <div class="emotion-display-title">
+                                <h1>Triggers</h1>
+                                
+                            </div>
+                            <div id="pos-emotion-triggers-description">
+                                <p id="pos-trigger-0"></p>
+                                <p id="pos-trigger-1"></p>
+                                <p id="pos-trigger-2"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="chosen-topic" >
+                    <p id="chosen-topic">This is where your target for this session will be displayed once you do the discovery process</p>
+                </div>
+
+                <div class="button-div">
+                    <button class="discovery-button" id="start-discover" type="submit">Start Discovery</button>
+                </div>
+
+            </div>
+        </div>
+
+        
+
+<!-- Home ***************************************************************************************************************************************************** -->
+        <div class="home-container" id="intro-page">
+
+            
+
+            
+
+
+
+            <div class="home-title">
+                <div class="title">
+                    <h1>NLP APP</h1>
+                    <p>all in one app to clear up mental clutter</p>
+                </div>
+                <button class="discovery-button" >Start Discovery</button>
+            </div>
+
+
+
+            
+
+
+            <div class="home-apps-display">
+                <div class="app-card">
+                    <i class="fas fa-brain"></i>
+                    <button type="submit" class="start-swish-button">Swish</button>
+                </div>
+                <div class="app-card">
+                    <i class="fas fa-brain"></i>
+                    <button type="submit" class="start-let-go-button">Let Go</button>
+                </div>
+                <div class="app-card">
+                    <i class="fas fa-brain"></i>
+                    <button type="submit" class="start-integration-button">Integrate</button>
+                </div>
+                <div class="app-card">
+                    <i class="fas fa-brain"></i>
+                    <button type="submit" class="start-Anchor-button" id="test-button-home">Anchor</button>
+                </div>
+            </div>
+        </div>
+
+
+<!-- Discover APP *************************************************************************************************************************************************** -->
+
+        <div class="hidden sentence-completion-container-1" id="sentence-completion-1">
+            <!-- 1) sentence completion
+                what area of life, or specific kind of experience ilicits strong negative emotions  -->
+
+            <p>Lets start out by getting an idea of what you'd like to work on</p>
+
+            <div class="sentence-completion-mid-section">
+                <div class="sentence-completion-1-input-field">
+                    <p>Sentence Completion: 5 answers <br><br>
+                        One area of life I would like to improve on is...
+                    </p><br>
+                    <div>
+                        <input type="text" id="user-sentence-input">
+                        <button type="submit" id="sentence-submit-button">Enter</button>
+                    </div>
+                    
+                </div> 
+            </div>
+
+            <button type="submit" class="next-step hidden" id="delayed-next-step">Next Step</button>
+
+        </div>
+
+
+
+
+
+
+
+        <div class="hidden sentence-completion-container-2" id="sentence-completion-2">
+            <!-- 2) select the sentence that would be most useful to work on -->
+
+            <p>Choose the area that you'd most like to improve on</p>
+            <div class="sentence-display" id="sentence-display">
+                
+                
+            </div>
+            <button type="submit" class="next-step" id="sentence-selected-button">Next Step</button>
+            <button type="submit" class="last-step" id="last-step"><i class="fas fa-undo"></i></button>
+        </div>
+
+
+
+
+
+
+
+        <div class="hidden sentence-completion-container-3" id="sentence-completion-3">
+            <!-- 3) describe the emotion that is ilicited by that experience or area of life  3x -->
+            <p>as you remember a specific time you felt this emotion powerfully, notice the emotion you feel and write a short description</p><br><br>
+            <p>Example: "threatened" or "annoyed"</p>
+            <input type="text" id="emotion-entry">
+            <button type="submit" class="enter-emotion-button" id="enter-emotion-button">Enter emotion</button>
+                
+            <button type="submit" class="hidden next-step" id="emotions-entered">Next Step</button>
+            <button type="submit" class="last-step" id="last-step"><i class="fas fa-undo"></i></button>
+
+        </div>
+
+
+
+
+
+
+
+
+        <div class="hidden sentence-completion-container-4" id="sentence-completion-4">
+            <!-- 4) choose descripton that best describes the emotion you feel in that area -->
+            <p>Select the description that fits best with the feeling you get in your target area</p>
+
+            <div class="emotion-selection-display" id="emotion-selection-display">
+                
+                
+            </div>
+            
+            <button type="submit" class="next-step" id="">Next Step</button>
+            <button type="submit" class="last-step" id="last-step"><i class="fas fa-undo"></i></button>
+        </div>
+
+
+
+
+
+
+
+        <div class="hidden sentence-completion-container-5" id="sentence-completion-5">
+            <!-- 5) identify triggers for that emotion
+                sights
+                sounds -->
+
+            <p>Sentence Completion: 3X</p>
+            <p>One thing I saw or heard that set off the negative emotion most was...</p>
+            <input type="text" id="trigger-entry">
+            
+            <button type="submit" id="enter-trigger-button">Enter Trigger</button>
+            
+            <button type="submit" class="hidden next-step" id="triggers-entered">Next Step</button>
+            <button type="submit" class="last-step" id="last-step"><i class="fas fa-undo"></i></button>
+        </div>
+
+
+
+
+
+
+
+        <div class="hidden sentence-completion-container-6" id="sentence-completion-6">
+            <!-- 6) select strongest triggers -->
+
+            <p>while remembering that past experience, set off these triggers by seeing and hearing them, and select the 3 triggers that most stregthen that feeling</p>
+
+            <div class="trigger-selection-display" id="trigger-selection-display">
+                
+                
+            </div>
+            <button type="submit" id="delete-trigger">Delete Trigger</button>
+            <button type="submit" class="next-step" id="">Next Step</button>
+            <button type="submit" class="last-step" id="last-step"><i class="fas fa-undo"></i></button>
+        </div>
+
+
+
+
+
+
+        <div class="hidden sentence-completion-container-7" id="sentence-completion-7">
+            <!-- 7) select anchor image + sound that best resembles the emotion you would like to work on. -->
+
+            <p>Choose the emotion that most closely matches what you feel about the area of life you chose</p>
+            <div class="icon-display">
+                <i class="far fa-angry -emotion"><audio id="neg-sound" src="./css/media/negative-tone-1.mp3"></audio></i>
+                <i class="far fa-flushed -emotion"><audio id="neg-sound" src="./css/media/negative-tone-2.mp3"></audio></i>
+                <i class="far fa-frown -emotion"><audio id="neg-sound" src="./css/media/negative-tone-3.mp3"></audio></i>
+                <i class="far fa-grimace -emotion"><audio id="neg-sound" src="./css/media/negative-tone-4.mp3"></audio></i>
+                <i class="far fa-meh -emotion"><audio id="neg-sound" src="./css/media/negative-tone-5.mp3"></audio></i>
+                <i class="far fa-meh-rolling-eyes -emotion"><audio id="neg-sound" src="./css/media/negative-tone-6.mp3"></audio></i>
+                <i class="far fa-sad-tear -emotion"><audio id="neg-sound" src="./css/media/negative-tone-7.mp3"></audio></i>
+                <i class="far fa-surprise -emotion"><audio id="neg-sound" src="./css/media/negative-tone-8.mp3"></audio></i>
+            
+            </div>
+            
+            
+            
+
+            <button type="submit" class="next-step" id="sentence-selected-button">Next Step</button>
+            <button type="submit" class="last-step" id="last-step"><i class="fas fa-undo"></i></button>
+
+        </div>
+
+
+
+
+
+        
+        <div class="hidden sentence-completion-container-8" id="sentence-completion-8">
+            <!-- 8) anchor image + sound
+            I want to display the target, emotion, and triggers to keep them primed
+            then when they are feeling the emotion most intensely, press the Anchor button
+            when pressed, the whole screen will display white with the icon selected and the sound associated playing
+            
+            -->
+
+            <p>now we'll set up your negative emotional anchor for this session so we can evoke it when it's most useful in the process</p>
+            <div class="anchor-display">
+
+            </div>
+            <button type="submit" class="set-off-anchor" id="set-off-anchor-button">Anchor</button>
+
+            <button type="submit" class="next-step" id="">Next Step</button>
+            <button type="submit" class="last-step" id="last-step"><i class="fas fa-undo"></i></button>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <div class="hidden sentence-completion-container-9" id="sentence-completion-9">
+            <!--  9) identify an emotion that would be more positive and useful in the selected area -->
+            <p>Sentence Completion: 3X</p>
+            <p>One emotion I've felt before that would be useful in the area I'm working on is...</p><br><br>
+            
+
+            <input type="text" id="positive-emotion-entry">
+            <button type="submit" id="positive-emotion-entry-button">Enter Positive Emotion</button>
+
+
+
+            <button type="submit" class="hidden next-step" id="positive-emotion-entered">Next Step</button>
+            <button type="submit" class="last-step" id="last-step"><i class="fas fa-undo"></i></button>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        <div class="hidden sentence-completion-container-10" id="sentence-completion-10">
+            <!-- 10) select the emotional that would be most useful in the area you're working on -->
+            <p>select the emotion that would be most useful in the area you're working on</p>
+
+            <div class="positive-emotion-entry-display" id="positive-emotion-entry-display">
+                
+                
+            </div>
+
+            <button type="submit" class="next-step" id="">Next Step</button>
+            <button type="submit" class="last-step" id="last-step"><i class="fas fa-undo"></i></button>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="hidden sentence-completion-container-11" id="sentence-completion-11">
+            <!-- 11) idenitfy submodality triggers for that positive emotion by going back to a time they felt it strongly. -->
+
+            <p>Remember a time when you had a strong experience of that positive emotion.</p><br><br>
+            <p>notice what you saw and heard that most made you feel that positive emotion</p><br><br>
+            <p>Sentence Completion: One thing I saw and heard that most made you feel that positive emotion was...</p>
+            <input type="text" id="positive-trigger-entry">
+            <button type="submit" id="positive-trigger-entry-button">Enter Positive Trigger</button>
+
+
+            <button type="submit" class="next-step" id="positive-emotions-entered">Next Step</button>
+            <button type="submit" class="last-step" id="last-step"><i class="fas fa-undo"></i></button>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <div class="hidden sentence-completion-container-12" id="sentence-completion-12">
+            <!-- 12) select strongest positive triggers -->
+            <p>Select the 3 triggers that evoke the positive emotion most</p>
+            <div class="positive-trigger-entry-display" id="positive-trigger-entry-display">
+                
+                
+            </div>
+            <button type="submit" id="delete-pos-trigger">Delete Trigger</button>
+            <button type="submit" class="next-step" id="">Next Step</button>
+            <button type="submit" class="last-step" id="last-step"><i class="fas fa-undo"></i></button>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="hidden sentence-completion-container-13" id="sentence-completion-13">
+            <!-- 13) choose a positive anchor image + sound -->
+
+            <p>Choose the emotion that most closely matches what you would like to feel about the area of life you chose</p>
+            <div class="icon-display">
+                <i class="far fa-laugh positive-emotion"><audio id="positive-sound" src="./css/media/positive-tone-1.mp3"></audio></i>
+                <i class="far fa-grin-tongue-wink positive-emotion"><audio id="positive-sound" src="./css/media/positive-tone-2.mp3"></audio></i>
+            </div>
+            
+            
+
+            <button type="submit" class="next-step" id="">Next Step</button>
+            <button type="submit" class="last-step" id="last-step"><i class="fas fa-undo"></i></button>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="hidden sentence-completion-container-14" id="sentence-completion-14">
+            <!-- 14) anchor positive image + sound -->
+
+            <p>now we'll set up your negative emotional anchor for this session so we can evoke it when it's most useful in the process</p>
+            <div class="pos-anchor-display">
+
+            </div>
+            <button type="submit" class="set-off-anchor" id="set-off-pos-anchor-button">Anchor</button>
+
+            <button type="submit" class="next-step" id="">Next Step</button>
+            <button type="submit" class="last-step" id="last-step"><i class="fas fa-undo"></i></button>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        <div class="hidden sentence-completion-container-15" id="sentence-completion-15">
+            <!-- 15) test anchors
+            home -->
+            <button class="test-positive-anchor" id="test-positive-anchor">Test Positive Anchor</button>
+            <button class="test-negative-anchor" id="test-negative-anchor">Test Negative Anchor</button>
+            <button type="submit" class="last-step" id="last-step"><i class="fas fa-undo"></i></button>
+            <button type="submit" class="home-button" id="home-button">Home</button>
+        </div>
+
+    </div>
+</body>
+
+<script src="app.js"></script>
+
+</html>
+
+
+<!-- things i have left to do
+
+    set up the rest of the pages for the discovery app
+        negative emotion anchor page
+            use selected triggers to anchor the emotion to the icon and sound that's been selected
+        positive emotion selection
+
+
+        steps for discovery app
+            1) sentence completion
+                what area of life, or specific kind of experience ilicits strong negative emotions 
+            2) select the sentence that would be most useful to work on
+            3) describe the emotion that is ilicited by that experience or area of life  3x
+            4) choose descripton that best describes the emotion you feel in that area
+            5) identify triggers for that emotion
+                sights
+                sounds
+            6) select strongest triggers
+            7) select anchor image + sound that best resembles the emotion you would like to work on.
+            8) anchor image + sound
+            9) identify an emotion that would be more positive and useful in the selected area
+            10) idenitfy submodality triggers for that positive emotion by going back to a time they felt it strongly.
+            11) select strongest positive triggers
+            12) choose a positive anchor image + sound
+            13) anchor positive image + sound
+            14) test anchors
+            home
+
+
+-->

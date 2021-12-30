@@ -1,0 +1,74 @@
+@import "./mixins";
+@import "./variables";
+
+
+
+.sentence-completion-container-1,
+.sentence-completion-container-2,
+.sentence-completion-container-3,
+.sentence-completion-container-4,
+.sentence-completion-container-5,
+.sentence-completion-container-6,
+.sentence-completion-container-7,
+.sentence-completion-container-8,
+.sentence-completion-container-9,
+.sentence-completion-container-10,
+.sentence-completion-container-11,
+.sentence-completion-container-12,
+.sentence-completion-container-13,
+.sentence-completion-container-14,
+.sentence-completion-container-15 {
+    @include flex(space-around, column);
+    padding: 13vh 10vh;
+    height: 100%;
+    width: 100%;
+    font-size: $font-size-md;
+    text-align: center;
+
+    input {
+        padding: 5px 10px;
+        margin-bottom: 5px;
+        width: 90%;
+        font-size: $font-size-md;
+        border-radius: 15px;
+        
+
+    }
+
+    .sentence-box,
+    .emotion-entry-box {
+        padding: 5px 10px;
+        margin: 0 5px 5px 5px;
+        border: 2px solid $primary-dark;
+        border-radius: 15px;
+    }
+
+    .emotion-selection-display {
+        @include flex(center, row);
+        flex-wrap: wrap;
+    }
+
+    .icon-display {
+        @include flex(center, row);
+        flex-wrap: wrap;
+        
+        
+    }
+
+    .-emotion,
+    .positive-emotion {
+        font-size: 2em;
+        margin: 0 10px 10px 10px;
+    }
+    
+}
+
+
+.sentence-completion-1-input-field {
+    @include flex(center, column);
+    
+    
+    height: 50vh;
+    width: 90vw;
+    background-color: $background-grey;
+}
